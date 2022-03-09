@@ -16,6 +16,10 @@
 
 <nav class="header__nav nav">
     <h2 class="nav__title">Navigation principale</h2>
-    <p class="nav__placeholder">TODO...</p>
+    <?php wp_nav_menu(['menu' => 'primary',
+        'container_class'=>'nav_container',
+        'menu_class'=>'menu_links',
+        'walker'=> new PrimaryMenuWalker(),
+        ]); ?>
 </nav>
 </header>

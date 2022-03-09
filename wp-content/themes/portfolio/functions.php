@@ -1,5 +1,9 @@
 <?php
 
+//charger les fichiers nécessaires
+require_once(__DIR__ . './Menus/PrimaryMenuWalker.php');
+
+
 // Désactiver l'éditeur "Gutenberg" de Wordpress
 add_filter('use_block_editor_for_post', '__return_false');
 
@@ -56,7 +60,7 @@ function dw_get_projects($count = 20)
 {
     // 1. on instancie l'objet WP_Query
     $projects = new WP_Query([
-        'post_type' => 'projets',
+        'post_type' => 'Projets',
         'orderby' => 'date',
         'order' => 'DESC',
         'posts_per_page' => $count,
@@ -65,3 +69,7 @@ function dw_get_projects($count = 20)
     // 2. on retourne l'objet WP_Query
     return $projects;
 }
+
+//enregistrer les zones de menus
+register_nav_menu('primary','Navigation principale (haut de page)');
+register_nav_menu('footer','Navigation principale (pied de page)');
