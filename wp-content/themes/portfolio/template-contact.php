@@ -7,7 +7,9 @@
             <?=  get_the_content();  ?>
         </div>
         <div class="contact__form">
-            <?= apply_filters('the_content', '[contact-form-7 id="38" title="Contact Form"]');  ?>
+            <?= apply_filters('the_content', '[wpforms id="63"]');  ?>
         </div>
     </main>
 <?php endwhile; endif; ?>
+
+<?php get_footer(); ?>

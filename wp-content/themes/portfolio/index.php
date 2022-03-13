@@ -31,7 +31,7 @@
         <div class="projects__container">
             <?php if(($projects = dw_get_projects(3))->have_posts()): while($projects->have_posts()): $projects->the_post(); ?>
                 <article class="project">
-                    <a href="<?= get_the_permalink(); ?>" class="trip__link">Voir le projet "<?= get_the_title(); ?>"</a>
+                    <a href="<?= get_the_permalink(); ?>" class="project__link">Voir le projet "<?= get_the_title(); ?>"</a>
                     <div class="project__card">
                         <header class="project__head">
                             <h3 class="project__title"><?= get_the_title(); ?></h3>
@@ -39,7 +39,7 @@
                                     <?= ucfirst(date_i18n('F, Y', strtotime(get_field('project_date', false, false)))); ?>
                                 </time></p>
                         </header>
-                        <figure class="trip__fig">
+                        <figure class="project__fig">
                             <?= get_the_post_thumbnail(null, 'medium_large', ['class' => 'project__thumb']); ?>
                         </figure>
                     </div>
