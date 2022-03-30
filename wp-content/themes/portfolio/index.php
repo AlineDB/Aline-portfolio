@@ -60,6 +60,43 @@
             <?php endif; ?>
         </div>
     </section>
+    <section class="layout__skills skills">
+        <h2 class="skills__title">Qui est Aline ?</h2>
+        <div class="skills__container langages">
+            <h3 class="skills__subtitle">Langages</h3>
+            <ul class="skills__langages">
+                <li class="skills__li">Javascript</li>
+                <li class="skills__li">PHP</li>
+                <li class="skills__li">SQL</li>
+                <li class="skills__li">HTML</li>
+                <li class="skills__li">CSS</li>
+                <li class="skills__li">CSS</li>
+            </ul>
+        </div>
+        <div class="skills__container programs">
+            <h3 class="skills__subtitle">Logiciels</h3>
+            <ul class="skills__programs">
+                <li class="skills__li">Suite Adobe</li>
+                <li class="skills__li">PHPStorm</li>
+                <li class="skills__li">GitHub</li>
+                <li class="skills__li">Suite Office</li>
+                <li class="skills__li">Wordpress</li>
+                <li class="skills__li">Canva</li>
+            </ul>
+        </div>
+        <div class="skills__container softskills">
+            <h3 class="skills__subtitle">Logiciels</h3>
+            <ul class="skills__softskills">
+                <li class="skills__li">Organisée</li>
+                <li class="skills__li">Bonne humeur</li>
+                <li class="skills__li">Investie</li>
+                <li class="skills__li">Télétravail possible (et souhaité)</li>
+                <li class="skills__li">Facilité d'adaptation</li>
+                <li class="skills__li">Communication aisée</li>
+                <li class="skills__li">N'hésite pas à se former</li>
+            </ul>
+        </div>
+    </section>
 </main>
 
 

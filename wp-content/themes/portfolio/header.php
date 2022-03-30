@@ -23,5 +23,5 @@
             </a>
         <?php endforeach; ?>
 </nav>
-        <img class="logo" src="./img/logo_webdesign.png" alt="logo web et design">
+        <img class="header__logo" src="./img/logo_webdesign.png" alt="logo web et design">
 </header>
