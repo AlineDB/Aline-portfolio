@@ -2,11 +2,10 @@
 <?php get_header(); ?>
 
     <section class="layout__projets projets">
-        <h2 class="projets__title">Mes derniers projets</h2>
+        <h2 class="projets__title">Webdesign mais pas que</h2>
         <div class="projets__container">
             <?php if(($othersProjects = dw_get_othersProjects(300))->have_posts()): while($othersProjects->have_posts()): $othersProjects->the_post(); ?>
                 <article class="project">
-                    <a href="<?= get_the_permalink(); ?>" class="project__link">Voir le projet "<?= get_the_title(); ?>"</a>
                     <div class="project__card">
                         <header class="project__head">
                             <h3 class="project__title"><?= get_the_title(); ?></h3>
@@ -18,6 +17,7 @@
                             <?= get_the_post_thumbnail(null, 'medium_large', ['class' => 'project__thumb']); ?>
                         </figure>
                     </div>
+                    <a href="<?= get_the_permalink(); ?>" class="project__link">Voir le projet "<?= get_the_title(); ?>"</a>
                 </article>
             <?php endwhile; else: ?>
                 <p class="projects__empty">Il n'y a pas de projets à vous montrer...</p>

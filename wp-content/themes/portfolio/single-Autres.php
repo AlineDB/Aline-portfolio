@@ -19,7 +19,7 @@
                     <?php endif; ?>
                 </dd>
                 <dt class="singleProjet__label">Catégorie(s)</dt>
-                <dd class="singleProjet__data"><?= get_field('categorie_projet', false, true); ?></dd>
+                <dd class="singleProjet__data"><?= get_field('categories_projet', false, true); ?></dd>
             </dl>
         </aside>
     </main>

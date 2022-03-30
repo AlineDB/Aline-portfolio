@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aline, votre webdesign</title>
 </head>
 <body>
     <header class="header">
@@ -23,4 +23,5 @@
             </a>
         <?php endforeach; ?>
 </nav>
+        <img class="logo" src="./img/logo_webdesign.png" alt="logo web et design">
 </header>

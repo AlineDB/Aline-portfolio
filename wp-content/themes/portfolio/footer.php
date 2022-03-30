@@ -10,6 +10,7 @@
                 <a href="<?= $link->url; ?>" <?= $link->title ? ' title="' . $link->title . '"' : ''; ?> class="nav__link"><?= $link->label; ?>
                 </a>
                 <?php endforeach; ?>
+                <img class="logo" src="./img/logo_webdesign.png" alt="logo web et design">
         </section>
     </footer>
 </body>
