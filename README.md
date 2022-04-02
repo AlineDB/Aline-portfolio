@@ -4,25 +4,18 @@
 
 Dans le cadre du cours de Design Web, création d'un site portfolio afin de présenter mes projets, mes expériences, mon CV et moi-même.
 
-
+(Tous droits réservés, ne pas reproduire)
 
 
 ## Idées Design
 
- [1](https://www.pinterest.fr/pin/20547742043098410/).
- 
-[2](https://www.pinterest.fr/pin/398568635781315381/).
+Vous trouverez l'analyse et les personas [ici](https://github.com/AlineDB/Aline-portfolio/blob/8cf5d4585e2d595c578bf5667efcff27cb049399/Doc/Analyse%20et%20personas%20portfolio.docx)
 
-[3](https://www.pinterest.fr/pin/121104677470968913/).
 
-[4](https://www.pinterest.fr/pin/362821313741675349/).
+Vous trouverez le wireframe [ici](https://github.com/AlineDB/Aline-portfolio/blob/8cf5d4585e2d595c578bf5667efcff27cb049399/Doc/portfolio_wireframe_complet.png)
 
-[5](https://www.pinterest.fr/pin/333125703690990644/).
 
-[6](https://www.pinterest.fr/pin/373587731592151707/).
+Vous trouverez les scénarios de tests utilisateurs et les résultats pour les prototypes [ici](https://github.com/AlineDB/Aline-portfolio/blob/8cf5d4585e2d595c578bf5667efcff27cb049399/Doc/tests%20utilisateurs%20prototype.docx)
 
-[Bonnes idées animations et contenu](https://www.templatemonsterpreview.com/demo/75570.html).
+A ce stade les tests sont en cours, les wireframes peuvent donc être modifiés et les résultats mis à jour.
 
-[idée design fenêtre pc](https://www.pinterest.fr/pin/985231159081179/).
-
-[retro](https://www.pinterest.fr/pin/123075002295652674/).
