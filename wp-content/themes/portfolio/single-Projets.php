@@ -8,6 +8,7 @@
         <div class="singleProjet__content">
             <?=  the_content();  ?>
         </div>
+        <button class="singleProjet__button"><a href="template-contact.php" title="Me contacter">Me contacter</a></button>
         <aside class="singleProjet__details">
             <h3 class="singleProjet__subtitle">Détails du projet</h3>
             <dl class="singleProjet__def">
@@ -22,9 +23,13 @@
                 <dd class="singleProjet__data"><?= get_field('categorie_projet', false, true); ?></dd>
             </dl>
         </aside>
+        <section class="singleProjet__sugestion">
+
+            <!--Faire en sorte que les catégories s'affichent avec un id différent et
+ajouter une section suggestion où on propose un des derniers projets ayant la/les mêmes catégories-->
+        </section>
     </main>
     <?php endwhile; endif; ?>
-
 
 
 <?php get_footer(); ?>

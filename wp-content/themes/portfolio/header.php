@@ -23,5 +23,7 @@
             </a>
         <?php endforeach; ?>
 </nav>
-        <img class="header__logo" src="./img/logo_webdesign.png" alt="logo web et design">
+        <img class="header__logo" src="../../uploads/2022/02/screenshot.png" alt="logo web et design"
+             srcset="../../uploads/2022/02/screenshot-200x160.png 320w,
+                    ../../uploads/2022/02/screenshot-500x400.png 640w">
 </header>

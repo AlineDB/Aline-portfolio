@@ -35,7 +35,7 @@ register_post_type('Projets', [
         'name' => 'Projets',
         'singular_name' => 'Projet',
     ],
-    'description' => 'Tous mes projets',
+    'description' => 'Tous mes projets web et design',
     'public' => true,
     'menu_position' => 5,
     'menu_icon' => 'dashicons-category',
@@ -58,7 +58,7 @@ register_post_type('Autres', [
     'rewrite' => ['slug' => 'autres'],
 ]);
 
-// Enregistrer un seul custom post-type pour "mes projets"
+// Enregistrer un seul custom post-type pour "archives"
 register_post_type('Archives', [
     'label' => 'Archives',
     'labels' => [
