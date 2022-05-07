@@ -1,0 +1,95 @@
+//fonts and title
+
+html{
+  font-family: Orbitron, sans-serif;
+  margin: 10px 10px;
+}
+
+h2{
+  font-family: "Gunship Gradient", sans-serif;
+  font-size: 1.875em;
+  background-color: #DDF4EC;
+  padding: 0.3125em 0 0.3125em;
+  border-bottom: 1px solid gray;
+  margin-bottom: 1.5625em;
+  text-align: center;
+}
+
+h3{
+  font-family: Orbitron, sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.875em;
+  margin-bottom: 1.25em;
+}
+
+//blocs
+
+.layout__about, .layout__projects, .layout__others, .layout__skills, .layout__projets, .contact, .footer, .header{
+  border: 2px solid black;
+  margin-bottom: 60px;
+}
+
+.project__link a, .project__date{
+  text-align: right;
+}
+
+article{
+  border-bottom: 0.2px dotted lightgray;
+}
+
+li{
+  list-style-type: none;
+}
+
+//buttons
+
+button{
+  text-align: center;
+  font-family: Orbitron, sans-serif;
+  font-weight: bold;
+  padding: 1.25em 6.25em;
+  background-color: #DDF4EC;
+  margin: 3.375em 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+input, textarea{
+  margin-bottom: 1.75em;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+//reseaux
+
+.facebook:hover{
+  fill: #FFFFFF;
+  background-color: #00adef;
+  border:none;
+}
+.linkendin:hover{
+  fill: #FFFFFF;
+  background-color: #1c4ed5;
+  border:none;
+}
+.behance:hover{
+  fill: #FFFFFF;
+  background-color: #0000CD;
+  border:none;
+}
+
+.github:hover{
+  fill: #FFFFFF;
+  background-color: #003668;
+  border:none;
+}
+
+.kindle:hover{
+  fill: #FFFFFF;
+  background-color: #F5CE00;
+  border:none;
+}

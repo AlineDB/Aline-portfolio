@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
     <section class="layout__projets projets">
-        <h2 class="projets__title">Webdesign mais pas que</h2>
+        <h2 class="projets__title"><?= __('Webdesign mais aussi', 'Aline-db-portfolio'); ?></h2>
         <div class="projets__container">
             <?php if(($othersProjects = dw_get_othersProjects(300))->have_posts()): while($othersProjects->have_posts()): $othersProjects->the_post(); ?>
                 <article class="project">
@@ -17,10 +17,10 @@
                             <?= get_the_post_thumbnail(null, 'medium_large', ['class' => 'project__thumb']); ?>
                         </figure>
                     </div>
-                    <a href="<?= get_the_permalink(); ?>" class="project__link">Voir le projet "<?= get_the_title(); ?>"</a>
+                    <a href="<?= get_the_permalink(); ?>" class="project__link"><?= __('Voir le projet', 'Aline-db-portfolio'); ?> "<?= get_the_title(); ?>"</a>
                 </article>
             <?php endwhile; else: ?>
-                <p class="projects__empty">Il n'y a pas de projets à vous montrer...</p>
+                <p class="projects__empty"><?= __('Il n\'y a pas de projet à vous monter...', 'Aline-db-portfolio'); ?></p>
             <?php endif; ?>
         </div>
     </section>

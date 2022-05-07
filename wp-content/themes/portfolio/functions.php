@@ -17,6 +17,7 @@ add_action('init', 'dw_start_session', 1);
 
 function dw_start_session()
 {
+    load_theme_textdomain('Aline-db-portfolio', __DIR__ . '/locales');
     if (! session_id()) {
         session_start();
     }
@@ -155,25 +156,31 @@ function dw_handle_submit_contact_form(){
     $form = new ContactFormController($_POST);
     }
 
+// Fonction qui charge les assets compilés et retourne leure chemin absolu
 
-function dw_get_contact_field_value($field)
+function dw_mix($path)
 {
-    if(! isset($_SESSION['contact_form_feedback'])) {
-        return '';
+    $path = '/' . ltrim($path, '/');
+
+    if (!realpath(__DIR__ . '/public' . $path)) {
+        return;
     }
 
-    return $_SESSION['contact_form_feedback']['data'][$field] ?? '';
+    if (!($manifest = realpath(__DIR__ . '/public/mix-manifest.json'))) {
+        return get_stylesheet_directory_uri() . '/public' . $path;
+    }
+
+    // Ouvrir le fichier mix-manifest.json
+    $manifest = json_decode(file_get_contents($manifest), true);
+
+    // Regarder si on a une clef qui correspond au fichier chargé dans $path
+    if (!array_key_exists($path, $manifest)) {
+        return get_stylesheet_directory_uri() . '/public' . $path;
+    }
+
+    // Récupérer & retourner le chemin versionné
+    return get_stylesheet_directory_uri() . '/public' . $manifest[$path];
 }
 
-function dw_get_contact_field_error($field)
-{
-    if(! isset($_SESSION['contact_form_feedback'])) {
-        return '';
-    }
 
-    if(! ($_SESSION['contact_form_feedback']['errors'][$field] ?? null)) {
-        return '';
-    }
 
-    return '<p>Ce champ ne respecte pas : ' . $_SESSION['contact_form_feedback']['errors'][$field] . '</p>';
-}

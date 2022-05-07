@@ -12,40 +12,41 @@
                     <p>Oups ! Il y a des erreurs dans le formulaire</p>
                 <?php endif; ?>
                 <div class="form__field">
-                    <label for="firstname" class="form__label">Votre prénom :</label>
+                    <label for="firstname" class="form__label"><?= __('Votre prénom', 'Aline-db-portfolio'); ?> :</label>
                     <input type="text" name="firstname" id="firstname" class="form__input">
                 </div>
                 <div class="form__field">
-                    <label for="name" class="form__label">Votre nom :</label>
+                    <label for="name" class="form__label"><?= __('Votre nom', 'Aline-db-portfolio'); ?> :</label>
                     <input type="text" name="name" id="name" class="form__input">
                 </div>
                 <div class="form__field">
-                    <label for="phone" class="form__label">Votre téléphone :</label>
+                    <label for="phone" class="form__label"><?= __('Votre téléphone', 'Aline-db-portfolio'); ?> :</label>
                     <input type="tel" name="phone" id="phone" class="form__input">
                 </div>
                 <div class="form__field">
-                    <label for="mail" class="form__label">Votre email :</label>
+                    <label for="mail" class="form__label"><?= __('Votre mail', 'Aline-db-portfolio'); ?> :</label>
                     <input type="email" name="mail" id="mail" class="form__input">
                 </div>
                 <div class="form__field">
-                    <label for="message" class="form__label">Votre message :</label>
+                    <label for="message" class="form__label"><?= __('Votre message', 'Aline-db-portfolio'); ?> :</label>
                     <textarea type="message" name="message" cols="30" rows="10" id="message" class="form__input">
                     </textarea>
                 </div>
                 <div class="form__field">
                     <label for="rules" class="form__checkbox">
                         <input type="checkbox" name="rules"  id="rules" value="1">
-                        <span>J'accepte les <a href="#">conditions d'utilisations</a>.</span>
+                        <span><?= str_replace(':conditions', '<a href="http://localhost/Antilope/antilope/politique-de-confidentialite/">' . __('conditions générales d\'utilisation', 'Aline-db-antilope') . '</a>', __('J\'accepte les :conditions', 'Aline-db-antilope')); ?>
+                            .</span>
                     </label>
                 </div>
                 <div class="form__action">
                     <?php wp_nonce_field('nonce_submit_contact') ?>
                     <input type="hidden" name="action" value="submit_contact_form"/>
-                    <button class="form__button" type="submit">Envoyez</button>
+                    <button class="form__button" type="submit"><?= __('Envoyez', 'Aline-db-portfolio'); ?></button>
                 </div>
             </form>
         <?php else : ?>
-            <p id="contact">Merci ! Votre message a bien été envoyé.</p>
+            <p id="contact"><?= __('Merci votre message a bien été envoyé', 'Aline-db-portfolio'); ?>.</p>
             <?php unset($_SESSION['contact_form_feedback']); endif; ?>
     </main>
 <?php endwhile; endif; ?>

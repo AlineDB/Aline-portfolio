@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
     <section class="layout__projets projets">
-        <h2 class="projets__title">Mes derniers projets</h2>
+        <h2 class="projets__title"><?= __('Mes derniers projets', 'Aline-db-portfolio'); ?></h2>
         <div class="projets__container">
             <?php if(($projects = dw_get_projects(300))->have_posts()): while($projects->have_posts()): $projects->the_post(); ?>
                 <article class="project">
@@ -20,7 +20,7 @@
                     </div>
                 </article>
             <?php endwhile; else: ?>
-                <p class="projects__empty">Il n'y a pas de projets à vous montrer...</p>
+                <p class="projects__empty"><?= __('Il n\'y a pas de projet à vous monter ...', 'Aline-db-portfolio'); ?></p>
             <?php endif; ?>
         </div>
     </section>
