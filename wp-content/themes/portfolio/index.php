@@ -9,10 +9,7 @@
                 me spécialiser dans le webdesign tout en proposant mes diverses compétences pour compléter mon savoir-faire.
             </p>
             <figure class="about__fig">
-                <img src="../../uploads/2022/04/MoiViseur.png"
-                     srcset="../../uploads/2022/04/MoiViseur-150x100.png 320w,
-                    ../../uploads/2022/04/MoiViseur-300x200.png 640w"
-                    alt="Photo d'Aline">
+                <img src="<?php echo get_template_directory_uri().'/img/Aline_90x90(1).png'; ?>"  alt="Photo d'Aline">
             </figure>
         </div>
     </section>
@@ -24,8 +21,8 @@
                     <div class="project__card">
                         <header class="project__head">
                             <h3 class="project__title"><?= get_the_title(); ?></h3>
-                            <p class="project__date"><time class="project__time" datetime="<?= date('c', strtotime(get_field('project_date', false, false))); ?>">
-                                    <?= ucfirst(date_i18n('F, Y', strtotime(get_field('project_date', false, false)))); ?>
+                            <p class="project__date"><time class="project__time" datetime="<?= date('c', strtotime(get_field('date', false, false))); ?>">
+                                    <?= ucfirst(date_i18n('F, Y', strtotime(get_field('date', false, false)))); ?>
                                 </time></p>
                         </header>
                         <figure class="project__fig">
@@ -48,8 +45,8 @@
                     <div class="project__card">
                         <header class="project__head">
                             <h3 class="project__title"><?= get_the_title(); ?></h3>
-                            <p class="project__date"><time class="project__time" datetime="<?= date('c', strtotime(get_field('project_date', false, false))); ?>">
-                                    <?= ucfirst(date_i18n('F, Y', strtotime(get_field('project_date', false, false)))); ?>
+                            <p class="project__date"><time class="project__time" datetime="<?= date('c', strtotime(get_field('date', false, false))); ?>">
+                                    <?= ucfirst(date_i18n('F, Y', strtotime(get_field('date', false, false)))); ?>
                                 </time></p>
                         </header>
                         <figure class="project__fig">
@@ -218,6 +215,7 @@
                 </li>
             </ul>
         </div>
+        <button class="softskill__button"><a href="<?php echo get_template_directory_uri().'/img/DE%20BARROS%20A.cv.docx'; ?>" title="Télécharger le Cv au format docx">Télécharger le CV d'Aline</a></button>
     </section>
 </main>
 

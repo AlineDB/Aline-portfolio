@@ -8,19 +8,25 @@
         <div class="singleProjet__content">
             <?=  the_content();  ?>
         </div>
-        <button class="singleProjet__button"><a href="template-contact.php" title="Me contacter">Me contacter</a></button>
         <aside class="singleProjet__details">
             <h3 class="singleProjet__subtitle">Détails du projet</h3>
             <dl class="singleProjet__def">
                 <dt class="singleProjet__label">Date du projet</dt>
-                <dd class="singleProjet__data"><time class="singleProjet__date"><?= get_the_date(); ?></time></dd>
-                <?php if(get_field('cours_projet')):  ?>
+                <dd class="singleProjet__data">
+                    <time class="singleProjet__date" datetime="<?= date('c', strtotime(get_field('date', false, false))); ?>">
+                        <?= ucfirst(date_i18n('d F Y', strtotime(get_field('date', false, false)))); ?>
+                    </time></dd>
+                <?php if(get_field('cours')):  ?>
                 <dt class="singleProjet__label">Cours correspondant</dt>
-                <dd class="singleProjet__data"><?= get_field('cours_projet', false, false);  ?>
-                    <?php endif; ?>
+                <dd class="singleProjet__data"><?= get_field('cours', false, false);  ?>
                 </dd>
+                <?php endif; ?>
+                <?php if(get_field('categories')):  ?>
                 <dt class="singleProjet__label">Catégorie(s)</dt>
-                <dd class="singleProjet__data"><?= get_field('categorie_projet', false, true); ?></dd>
+                    <?php foreach (get_field('categories', false, false) as $id_category): ?>
+                        <dd class="singleProjet__data"><?php echo(get_cat_name($id_category)); ?></dd>
+                    <?php endforeach;?>
+                <?php endif; ?>
             </dl>
         </aside>
         <section class="singleProjet__sugestion">

@@ -10,9 +10,7 @@
                 <a href="<?= $link->url; ?>" <?= $link->title ? ' title="' . $link->title . '"' : ''; ?> class="nav__link"><?= $link->label; ?>
                 </a>
                 <?php endforeach; ?>
-                <img class="footer__logo" src="../../uploads/2022/02/screenshot.png" alt="logo web et design"
-                     srcset="../../uploads/2022/02/screenshot-200x160.png 320w,
-                    ../../uploads/2022/02/screenshot-500x400.png 640w">
+                <img class="footer__logo" src="<?php echo get_template_directory_uri().'/img/logo_wd.png'; ?>" alt="logo web et design" width="150" height="100">
                 <div class="footer__links">
                     <a title="Profil Facebook d'Aline" href="https://www.facebook.com/aline.lovec" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="facebook" viewBox="0 0 7 15" width="16" height="16">

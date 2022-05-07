@@ -23,7 +23,5 @@
             </a>
         <?php endforeach; ?>
 </nav>
-        <img class="header__logo" src="../../uploads/2022/02/screenshot.png" alt="logo web et design"
-             srcset="../../uploads/2022/02/screenshot-200x160.png 320w,
-                    ../../uploads/2022/02/screenshot-500x400.png 640w">
+        <img class="header__logo" src="<?php echo get_template_directory_uri().'/img/logo_wd.png'; ?>" alt="logo web et design" width="150" height="150">
 </header>
