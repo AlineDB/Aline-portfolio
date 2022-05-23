@@ -27,7 +27,7 @@
                                 </time></p>
                         </header>
                         <figure class="project__fig">
-                            <?= get_the_post_thumbnail(null, 'medium_large', ['class' => 'project__thumb']); ?>
+                            <?= get_the_post_thumbnail(null, 'post-thumbnail', ['class' => 'project__thumb']); ?>
                         </figure>
                     </div>
                     <a href="<?= get_the_permalink(); ?>" class="project__link"><?= __('Voir le projet', 'Aline-db-portfolio'); ?> "<?= get_the_title(); ?>"</a>
@@ -51,7 +51,7 @@
                                 </time></p>
                         </header>
                         <figure class="project__fig">
-                            <?= get_the_post_thumbnail(null, 'medium_large', ['class' => 'project__thumb']); ?>
+                            <?= get_the_post_thumbnail(null, 'post-thumbnail', ['class' => 'project__thumb']); ?>
                         </figure>
                     </div>
                     <a href="<?= get_the_permalink(); ?>" class="project__link"><?= __('Voir le projet', 'Aline-db-portfolio'); ?> "<?= get_the_title(); ?>"</a>

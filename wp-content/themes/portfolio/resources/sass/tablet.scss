@@ -1,0 +1,33 @@
+
+
+@media screen and (min-width: 1023px) {
+  //nav
+  .nav__burger, .nav__input{
+    display: none;
+  }
+
+  .nav__container, .footer li{
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-between;
+  }
+
+
+
+
+
+
+
+  //skills accueil
+  .skills__programs, .skills__langages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 30%;
+  }
+
+
+
+
+
+}

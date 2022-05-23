@@ -1,0 +1,13 @@
+
+@media screen and(min-width: 1024px) {
+  .layout__about, .layout__projects, .layout__others, .layout__skills, .layout__projets, .contact, .footer, .header, .singleProjet{
+    max-width: 80%;
+    margin-left:  10%;
+    margin-right:  10%;
+  }
+
+  input[id='toggle']{
+    display: none;
+  }
+}
+
