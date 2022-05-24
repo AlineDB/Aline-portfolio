@@ -247,3 +247,36 @@ p, .singleProjet__content{
 .singleProjet__content li:first-child{
   margin-top: 2em;
 }
+
+
+//form
+
+.contact__form{
+  margin-left: 0.5em;
+}
+
+.form__input{
+  margin-left: 40%;
+  padding: 0.5em;
+}
+
+.form__button{
+  margin-left: 30%;
+}
+
+.form__label:after{
+  content: '  *';
+}
+
+.form__button:hover{
+  cursor: pointer;
+}
+
+input:focus, textarea:focus,{
+  border: dotted 1px lightgray;
+  background-color: #DDF4EC;
+}
+
+input:invalid {
+  border-color: #d79f9f;
+}
