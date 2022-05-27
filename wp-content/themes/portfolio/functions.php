@@ -1,7 +1,7 @@
 <?php
 
 //charger les fichiers nécessaires
-require_once(__DIR__ . './Menus/PrimaryMenuItem.php');
+require_once(__DIR__ . '/Menus/PrimaryMenuItem.php');
 require_once(__DIR__ . '/Forms/BaseFormController.php');
 require_once(__DIR__ . '/Forms/ContactFormController.php');
 require_once(__DIR__ . '/Forms/Sanitizers/BaseSanitizer.php');
@@ -38,6 +38,8 @@ register_post_type('Projets', [
     ],
     'description' => 'Tous mes projets web et design',
     'public' => true,
+    'publicly_queryable' => true,
+    'query_var' => true,
     'menu_position' => 5,
     'menu_icon' => 'dashicons-category',
     'supports' => ['title','editor','thumbnail'],

@@ -1,7 +1,4 @@
-<?php
-
-
-?>
+<?php wp_footer(); ?>
 <footer class="footer">
             <h2 class="footer__title"><?= __('Pied de page', 'Aline-db-portfolio'); ?></h2>
     <section class="footer__body">
