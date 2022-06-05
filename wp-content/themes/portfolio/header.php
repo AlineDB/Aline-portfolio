@@ -16,12 +16,7 @@
     <header class="header">
         <h1 class="header__title"><?= get_bloginfo('name'); ?></h1>
 <p class="header__tagline"><?= get_bloginfo('description'); ?></p>
- <!--       <input class="nav__burger" type="checkbox" name="" id="burger" />
-        <label for="burger" name="" >
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="lightgrey" class="bi bi-justify" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </label>-->
+
         <input id="toggle" type="checkbox">
 
         <label for="toggle" class="hamburger">

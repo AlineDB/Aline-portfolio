@@ -57,8 +57,16 @@ a {
   color: black;
 }
 
+@font-face {
+  font-family: "Orbitron", sans-serif;
+  src: url("../../fonts/Orbitron-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Gunship Gradient", sans-serif;
+  src: url("../../fonts/gunship-gradient.ttf") format("ttf");
+}
 html {
-  font-family: Orbitron, sans-serif;
+  font-family: "Orbitron", sans-serif;
   margin: 10px 10px;
 }
 
@@ -93,7 +101,7 @@ h3 {
   margin-bottom: 1.25em;
 }
 
-.nav__title {
+.nav__title, .footer__title {
   display: none;
 }
 
@@ -101,20 +109,26 @@ body {
   cursor: url("./wp-content/themes/portfolio/img/le-curseur.png"), default;
 }
 
-a:hover {
+a:hover, .form__link:hover {
   cursor: url("wp-content/themes/portfolio/img/le-curseur (1).png"), pointer;
 }
 
-.singleProjet a:hover, .project__link:hover {
+.singleProjet a:hover, .project__link:hover, .form__link a:hover {
   background-color: lightgrey;
+  text-decoration: underline;
 }
 
-.header {
+.singleProjet a, .project__link, .form__link a {
+  padding: 0.3em;
+  text-decoration: underline;
+}
+
+.header, .footer {
   background-color: #DDF4EC;
 }
 
 .header__logo {
-  margin-left: 20%;
+  margin-left: 35%;
 }
 
 .layout__about, .layout__projects, .layout__others, .layout__skills, .layout__projets, .contact, .footer, .header, .singleProjet {
@@ -162,7 +176,7 @@ li {
 .nav__item:hover, .nav__languages:hover {
   background-color: lightgray;
   opacity: 80%;
-  display: inline-block;
+  max-width: 50%;
 }
 
 .nav__item, .nav__languages {
@@ -182,7 +196,7 @@ li {
 
 button {
   text-align: center;
-  font-family: Orbitron, sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-weight: bold;
   padding: 1.25em 6.25em;
   background-color: #DDF4EC;
@@ -193,6 +207,10 @@ button {
 input, textarea {
   margin-bottom: 1.75em;
   border-radius: 50px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 9px -2px #000000;
 }
 
 .footer {
@@ -206,7 +224,7 @@ input, textarea {
 
 .footer__logo {
   position: absolute;
-  top: 5em;
+  top: 2em;
   right: 10%;
 }
 
@@ -305,6 +323,10 @@ input:invalid {
   border-color: #d79f9f;
 }
 
+.form__link {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1023px) {
   .nav__container {
     position: relative;
@@ -336,7 +358,7 @@ input:invalid {
   **/
   .hamburger {
     position: absolute;
-    top: 12em;
+    top: 13em;
     right: 10%;
     margin-top: -45px;
     width: 2em;
@@ -386,10 +408,6 @@ input:invalid {
     margin-bottom: 1em;
   }
 
-  .nav__burger {
-    margin: 80%;
-  }
-
   .softskill__button {
     font-size: 0.7em;
     padding: 0.8em;
@@ -401,6 +419,10 @@ input:invalid {
 
   .gallery-icon {
     margin-bottom: 0.5em;
+  }
+
+  .contact__form textarea {
+    max-width: 200px;
   }
 }
 @media screen and (min-width: 1023px) {
@@ -417,7 +439,7 @@ input:invalid {
   .skills__programs, .skills__langages {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: end;
     margin-right: 30%;
   }
 

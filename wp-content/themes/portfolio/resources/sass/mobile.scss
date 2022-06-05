@@ -12,9 +12,6 @@
     margin-bottom: 1em;
   }
 
-  .nav__burger{
-    margin: 80%;
-  }
   
 
 
@@ -33,6 +30,10 @@
 
 .gallery-icon{
   margin-bottom: 0.5em;
-}
+  }
+
+  .contact__form textarea{
+    max-width: 200px;
+  }
 
 }
