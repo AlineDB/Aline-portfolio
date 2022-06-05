@@ -1,13 +1,14 @@
 //fonts and title
 
 @font-face {
-  font-family: 'Orbitron', sans-serif;
-  src: url("../../fonts/Orbitron-Regular.ttf") format('ttf');
+  font-family: "Orbitron";
+  font-weight: normal;
+  src: url("../../fonts/Orbitron-Regular.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: "Gunship Gradient", sans-serif;
-  src: url("../../fonts/gunship-gradient.ttf") format('ttf');
+  font-family: "Gunship Gradient";
+  font-weight: normal;
+  src: url("../../fonts/gunship-gradient.ttf") format("truetype");
 }
 
 
@@ -304,4 +305,13 @@ input:invalid {
 
 .form__link{
   text-decoration: underline;
+}
+
+.form__field:nth-child(1){
+  margin-top: 1em;
+}
+
+.contact_form_feedback{
+  color: #d79f9f;
+  font-weight: bold;
 }
