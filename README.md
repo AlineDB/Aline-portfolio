@@ -19,7 +19,35 @@ Vous trouverez les scénarios de tests utilisateurs et les résultats pour les p
 
 A ce stade le site est en développement, les documents peuvent donc être mis à jour.
 
-[Voici le lien ](https://portfolio.aline-db.be/) afin d'accéder au site, il sera mis en ligne courant mai 2022 afin d'être présenté au jury mi juin.
+[Voici le lien ](https://portfolio.aline-db.be/) afin d'accéder au sitemis en ligne mi mai 2022 pour le présenter au jury le 13 juin 2022.
+
+
+
+## Tests
+
+HTML -> via W3C 3 warning concernant des attributs qui ne sont pas nécessaires. 3 erreurs impliquant de DOCTYPE qui est pourtant présent dans le header pour 2 et la dernière concerne une
+balise lang dans le head. Après vérification sur MDN, je ne trouve pas une correspondance à ses erreurs.
+
+CSS -> 
+via CSS STATS. Concernant les couleurs, Wordpress en génère de lui-même ce qui augmente les déclérations dans le CC malgré l'utilisation réduite de couleur dans le site en lui-même.
+Cela est visible pour les couleurs de texte mais aussi les backgrounds.
+La même observation s'effectue pour la taille de la typographie. Wordpress en déclare beaucoup.
+Au niveau des spécifités, le score le plus bas est de 27 et le plus haut 272. Malheureusement, des pics sont observés dans le premier tiers du graphique. Je n'utilise le sélecteurs d'id que 
+pour l'ancre fixe qui permet de retourner en haut de la page et pour le carroussel.
+
+via W3C. Aucune erreur, niveau 3 + SVG. Les seuls avertissements (21) concernane des déclaration effectuées par Wordpress.
+
+GTMETRIX -> Le site est classé au grade A avec une performance à 88% et une structure à 93% pour un serveur au Canada et une utilisation PC.
+
+Liens -> via W3C. Les ancres sont correctes (3). Pour les liens, celui de certaines images sont érronées. Il faut que je vérifie dans le dossier upload. Il porte une attention à deux
+liens qui ne bloquent pas les robots. Un lien n'a pas pu être analysé (celui renvoyant vers Amazon) et un lien qu'il indique perdu et qu'il manque un ACL.
+
+Responsive -> via Google test mobile friendly. Pour lui c'est ok.
+via I am responsive. Cela est une vérification visuelle sur 4 écrans (mobile, tablette, laptop et desktop). A priori cela semble etre bon.
+
+Accessibilité -> via Wave. Pas d'erreur de contraste. Structure ok. Une erreur concernant un label vide qui est normal car il sert juste pour le burger menu en mobile. Toutes les images
+ont un texte de remplacement. La tagline est en alerte car écrite comme un titre mais pas déclarée comme tel.
+
 
 ---------------
 

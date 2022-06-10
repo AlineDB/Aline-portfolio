@@ -35,7 +35,7 @@
                 <div class="form__field">
                     <label for="rules" class="form__checkbox">
                         <input type="checkbox" name="rules"  id="rules" value="1">
-                        <span><?= str_replace(':conditions', '<a class="form__link" href="https://portfolio.aline-db.be/politique-de-confidentialite/">' . __('conditions générales d\'utilisation', 'Aline-db-antilope') . '</a>', __('J\'accepte les :conditions', 'Aline-db-antilope')); ?>
+                        <span><?= str_replace(':conditions', '<a class="form__link" href="<?= get_home_url(); ?>/politique-de-confidentialite/">' . __('conditions générales d\'utilisation', 'Aline-db-antilope') . '</a>', __('J\'accepte les :conditions', 'Aline-db-antilope')); ?>
                             .</span>
                     </label>
                 </div>
