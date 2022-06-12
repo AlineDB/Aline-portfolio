@@ -70,4 +70,36 @@ You will find the user test scenarios and results for the prototypes [here](http
 
 At this stage the site is under development, so the documents can be updated.
 
+## Tests
+
+HTML -> via W3C 3 warnings concerning attributes that are not necessary. 3 errors involving DOCTYPE which is however present in the header for 2 and the last one concerns a
+lang tag in the head. After checking on MDN, I do not find a correspondence to these errors.
+
+CSS ->
+via CSS STATS. Concerning colors, Wordpress generates them by itself which increases the declarations in the CC despite the reduced use of color in the site itself.
+This is visible for the text colors but also for the backgrounds.
+The same observation is made for the size of the typography. Wordpress declares a lot.
+In terms of specifications, the lowest score is 27 and the highest 272. Unfortunately, peaks are observed in the first third of the graph. I only use the id selector
+for the fixed anchor which allows to go back to the top of the page and for the carousel.
+
+via W3C. No errors, level 3 + SVG. The only warnings (21) concern declarations made by Wordpress.
+
+GTMETRIX -> The site is classified at grade A with a performance at 88% and a structure at 93% for a server in Canada and a PC use.
+
+Links -> via W3C. The anchors are correct (3). For the links, the one of some images are erroneous. I have to check in the upload folder. It pays attention to two
+links that do not block the robots. A link could not be analyzed (the one referring to Amazon) and a link that it indicates lost and missing an ACL.
+
+Responsive -> via Google test mobile friendly. For him it's ok.
+via I am responsive. This is a visual check on 4 screens (mobile, tablet, laptop and desktop). It seems to be good.
+
+Accessibility -> via Wave. No contrast error. Structure ok. One error concerning an empty label which is normal because it is just for the burger menu in mobile. All images
+have a replacement text. The tagline is in alert because written as a title but not declared as such.
+
+
+
+
+
+
+
+
 [Here is the link ](https://portfolio.aline-db.be/) to access the site, it will be put online in May 2022 to be talked about to the jury mid June.
