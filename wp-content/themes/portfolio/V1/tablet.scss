@@ -1,0 +1,44 @@
+
+
+@media screen and (min-width: 1023px) {
+  //nav
+  .nav__burger, .nav__input{
+    display: none;
+  }
+
+  .nav__container, .footer li{
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-between;
+  }
+
+
+
+
+  //skills accueil
+  .skills__programs, .skills__langages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-right: 30%;
+
+  }
+
+
+
+  //form
+
+  .form__input{
+    margin-right: 40%;
+    width: 300px;
+  }
+
+  textarea{
+    min-width: 400px;
+  }
+
+   .form__button{
+     margin-left: 40%;
+   }
+
+}

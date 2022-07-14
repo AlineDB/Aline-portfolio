@@ -1,0 +1,39 @@
+
+
+@media screen and (max-width: 767px){
+
+  //nav
+
+  .nav__item, .nav__languages{
+    margin: 1em 0.80em;
+  }
+
+  .header__tagline{
+    margin-bottom: 1em;
+  }
+
+  
+
+
+  //softskills accueil
+  .softskill__button{
+    font-size: 0.7em;
+    padding: 0.8em;
+  }
+
+  //single project
+
+
+  .gallery-item{
+      margin-bottom: 2em;
+  }
+
+.gallery-icon{
+  margin-bottom: 0.5em;
+  }
+
+  .contact__form textarea{
+    max-width: 200px;
+  }
+
+}

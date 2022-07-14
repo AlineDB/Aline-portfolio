@@ -1,0 +1,317 @@
+//fonts and title
+
+@font-face {
+  font-family: "Orbitron";
+  font-weight: normal;
+  src: url("../../fonts/Orbitron-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gunship Gradient";
+  font-weight: normal;
+  src: url("../../fonts/gunship-gradient.ttf") format("truetype");
+}
+
+
+html{
+  font-family: 'Orbitron', sans-serif;
+  margin: 10px 10px;
+}
+
+.header__title{
+  font-weight: bold;
+  font-size: 1.875em;
+  text-align: center;
+  margin: 0.5em;
+}
+
+.header__tagline{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h2{
+  font-family: "Gunship Gradient", sans-serif;
+  font-size: 1.875em;
+  background-color: #DDF4EC;
+  padding: 0.3125em 0 0.3125em;
+  border-bottom: 1px solid gray;
+  margin-bottom: 1.5625em;
+  text-align: center;
+}
+
+h3{
+  font-family: Orbitron, sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.875em;
+  margin-bottom: 1.25em;
+}
+
+.nav__title, .footer__title{
+  display: none;
+}
+
+
+
+//cursor
+
+body{
+  cursor: url('../../img/le-curseur.png'), default;
+}
+
+a:hover, .form__link:hover{
+  cursor: url('../../img/le-curseur (1).png'), pointer;
+}
+
+.singleProjet a:hover, .project__link:hover, .form__link a:hover{
+  background-color: lightgrey;
+  text-decoration: underline;
+}
+
+.singleProjet a, .project__link, .form__link a{
+  padding: 0.3em;
+  text-decoration: underline;
+}
+
+
+
+//blocs accueil
+
+.header, .footer{
+  background-color: #DDF4EC;
+}
+
+.header__logo{
+  margin-left: 35%;
+}
+
+.layout__about, .layout__projects, .layout__others, .layout__skills, .layout__projets, .contact, .footer, .header, .singleProjet, .layout__politique{
+  border: 2px solid black;
+  margin-bottom: 60px;
+}
+
+.about__container, .projects__container, .skills__container{
+  margin: 0px 0.5em;
+}
+
+ .project__date{
+  text-align: right;
+}
+
+article{
+  border-bottom: 0.2px dotted lightgray;
+  padding-bottom: 1.5em;
+}
+
+li{
+  list-style-type: none;
+}
+
+.skills__langages li, .skills__programs li, {
+  list-style-type: disclosure-open;
+  margin: 1em 0em 1.5em 40%;
+}
+
+.skills__softskills{
+  display: grid;
+  grid-template-columns: 1fr 60%;
+  grid-row-gap: 1em;
+
+}
+
+.softskill__button{
+  margin: 2em 40%;
+}
+
+ .project__link{
+   margin: 1em;
+   padding-bottom: 0.5em;
+ }
+
+//nav
+
+.nav__item:hover, .nav__languages:hover{
+  background-color: lightgray;
+  opacity: 80%;
+  max-width: 50%;
+}
+
+.nav__item, .nav__languages{
+  padding: 0.5em;
+}
+
+
+
+//img accueil
+
+.project__fig img{
+  max-width: 150px;
+  max-height: 225px;
+  margin: 1.25em  40%;
+}
+
+.about__fig{
+  text-align: center;
+  margin: 1.25em 0px 1.875em 0px;
+}
+
+//buttons accueil + contact
+
+button{
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  padding: 1.25em 6.25em;
+  background-color: #DDF4EC;
+  margin: 3.375em 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+input, textarea{
+  margin-bottom: 1.75em;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+button:hover{
+  -webkit-box-shadow: 0px 0px 9px -2px #000000;
+  box-shadow: 0px 0px 9px -2px #000000;
+}
+
+
+//footer
+
+.footer{
+  position: relative;
+}
+.footer__links ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo{
+  position: absolute;
+  top: 2em;
+  right: 10%;
+}
+
+
+
+//reseaux
+
+.footer__links li{
+  margin-bottom: 1em;
+  margin-right: 1em;
+  padding: 0.5em;
+}
+
+
+.facebook:hover{
+  fill: #FFFFFF;
+  background-color: #00adef;
+  border:none;
+
+}
+.linkendin:hover{
+  fill: #FFFFFF;
+  background-color: #1c4ed5;
+  border:none;
+}
+.behance:hover{
+  fill: #FFFFFF;
+  background-color: #0000CD;
+  border:none;
+}
+
+.github:hover{
+  fill: #FFFFFF;
+  background-color: #003668;
+  border:none;
+}
+
+.kindle:hover{
+  fill: #FFFFFF;
+  background-color: #F5CE00;
+  border:none;
+}
+
+//single project
+
+.singleProjet__content{
+  margin-left: 0.5em;
+}
+
+.singleProjet__label{
+  display: inline-block;
+  margin: 0.5em;
+  font-size: 1.2em;
+  border-bottom: 1px solid lightgrey;
+}
+
+.singleProjet__data{
+  margin-left: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+p, .singleProjet__content{
+  line-height: 25px;
+}
+
+.singleProjet__content li{
+  list-style-type: disc;
+  margin-left: 10%;
+}
+
+.singleProjet__content li:first-child{
+  margin-top: 2em;
+}
+
+
+//form
+
+.contact__form{
+  margin-left: 0.5em;
+}
+
+.form__input{
+  margin-left: 40%;
+  padding: 0.5em;
+}
+
+.form__button{
+  margin-left: 30%;
+}
+
+.form__label:after{
+  content: '  *';
+}
+
+.form__button:hover{
+  cursor: pointer;
+}
+
+input:focus, textarea:focus,{
+  border: dotted 1px lightgray;
+  background-color: #DDF4EC;
+}
+
+input:invalid {
+  border-color: #d79f9f;
+}
+
+.form__link{
+  text-decoration: underline;
+}
+
+.form__field:nth-child(1){
+  margin-top: 1em;
+}
+
+.contact_form_feedback{
+  color: #d79f9f;
+  font-weight: bold;
+}

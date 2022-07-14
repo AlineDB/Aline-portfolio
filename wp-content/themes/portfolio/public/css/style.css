@@ -108,11 +108,11 @@ h3 {
 }
 
 body {
-  cursor: url("./wp-content/themes/portfolio/img/le-curseur.png"), default;
+  cursor: url("./le-curseur.png"), default;
 }
 
 a:hover, .form__link:hover {
-  cursor: url("wp-content/themes/portfolio/img/le-curseur (1).png"), pointer;
+  cursor: url("le-curseur(1).png"), pointer;
 }
 
 .singleProjet a:hover, .project__link:hover, .form__link a:hover {
